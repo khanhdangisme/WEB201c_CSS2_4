@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 3</title>
+  <title>Contact Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,25 +11,32 @@
   <header>
     <nav>
       <ul>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page1.html">Gallery</a></li>
+        <li><a href="page2.html">About Nature</a></li>
+        <li><a href="page3.html">Contact Us</a></li>
       </ul>
     </nav>
     <h1>Contact Us</h1>
   </header>
   <main id="main-content">
-    <form>
+    <p>We'd love to hear from you! Please fill out the form below:</p>
+    <form action="/submit" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
       <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
       <button type="submit">Submit</button>
     </form>
+    <p>You can also reach us at: <strong>contact@naturegallery.com</strong></p>
     <img src="images/image7.jpg" alt="A peaceful landscape">
   </main>
   <footer>
-    <p>&copy; 2025 Gallery. All rights reserved.</p>
+    <p>&copy; 2025 Nature Gallery. All rights reserved.</p>
   </footer>
 </body>
 </html>
